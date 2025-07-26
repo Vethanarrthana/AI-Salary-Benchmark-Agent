@@ -80,7 +80,7 @@ os.environ["GROQ_API_KEY"] = "your api key"
 os.environ["GROK_API_KEY"]=st.secrets["GROQ_API_KEY"]
 
 llm = ChatGroq(
-    model_name="groq/llama3-70b-8192",
+    model_name="llama3-70b-8192",
     temperature=0.7
 )
 
