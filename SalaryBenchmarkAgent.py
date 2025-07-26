@@ -1,4 +1,3 @@
-%%writefile salary_benchmarking_agent.py
 import os
 import json
 import streamlit as st
