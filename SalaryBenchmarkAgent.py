@@ -7,6 +7,11 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import CharacterTextSplitter
 from pypdf import PdfReader
+
+__import__("pysqlite3")
+import sys
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
 from crewai import Crew, Agent, Task, Process
 
 def display_salary_report(result):
