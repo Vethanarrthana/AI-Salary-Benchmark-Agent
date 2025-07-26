@@ -5,4 +5,5 @@ langchain-groq
 pypdf
 sentence-transformers
 faiss-cpu
-crewai[base]
+crewai
+pysqlite3-binary
