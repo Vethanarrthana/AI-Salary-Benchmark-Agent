@@ -76,11 +76,11 @@ st.set_page_config(page_title="AI Salary Benchmarking", layout="centered")
 st.title("📄 AI Resume Salary Benchmarking")
 st.markdown("Upload your resume and get an **estimated salary** based on your experience and skills.")
 
-os.environ["GROQ_API_KEY"] = "your api key"
+#os.environ["GROQ_API_KEY"] = "your api key"
 os.environ["GROK_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 llm = ChatGroq(
-    model_name="llama3-8b-8192",
+    model_name="groq/llama3-8b-8192",
     temperature=0.7
 )
 
