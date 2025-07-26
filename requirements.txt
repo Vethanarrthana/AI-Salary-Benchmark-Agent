@@ -4,6 +4,7 @@ langchain-groq
 faiss-cpu
 sentence-transformers
 pypdf
-crewai
+crewai==0.25.3
+chromadb==0.4.22
 openai
 python-dotenv
