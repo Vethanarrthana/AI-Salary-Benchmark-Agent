@@ -8,6 +8,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import CharacterTextSplitter
 from pypdf import PdfReader
 from crewai import Agent, Task, Crew, Process
+from chromadb import Documents, EmbeddingFunction, Embeddings
 
 def display_salary_report(result):
     try:
